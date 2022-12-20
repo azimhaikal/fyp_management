@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Klassy Cafe - Restaurant HTML Template</title>
+    <title>FYP Management System</title>
 <!--
     
 TemplateMo 558 Klassy Cafe
@@ -51,7 +51,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
+                        <a href="/" class="logo">
                             <img src="assets/images/klassy-logo.png" align="klassy cafe html template">
                         </a>
                         <!-- ***** Logo End ***** -->
@@ -71,8 +71,8 @@ https://templatemo.com/tm-558-klassy-cafe
                             </li>
                         -->
                             <li class="scroll-to-section"><a href="#menu">Menu</a></li>
-                            <li class="scroll-to-section"><a href="#chefs">Chefs</a></li> 
-                            <li class="submenu">
+                            <!-- <li class="scroll-to-section"><a href="#chefs">Chefs</a></li>  -->
+                            <!-- <li class="submenu">
                                 <a href="javascript:;">Features</a>
                                 <ul>
                                     <li><a href="#">Features Page 1</a></li>
@@ -80,7 +80,7 @@ https://templatemo.com/tm-558-klassy-cafe
                                     <li><a href="#">Features Page 3</a></li>
                                     <li><a href="#">Features Page 4</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
                             <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li>
                             <li>
@@ -102,9 +102,7 @@ https://templatemo.com/tm-558-klassy-cafe
                             @endif
                         </li>
                         </ul>        
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
+                        
                         <!-- ***** Menu End ***** -->
                     </nav>
                 </div>
@@ -120,10 +118,10 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-lg-4">
                     <div class="left-content">
                         <div class="inner-content">
-                            <h4>KlassyCafe</h4>
-                            <h6>THE BEST EXPERIENCE</h6>
+                            <h4>FYP</h4>
+                            <h6>Management System</h6>
                             <div class="main-white-button scroll-to-section">
-                                <a href="#reservation">Make A Reservation</a>
+                                <a href="#about">About FYP</a>
                             </div>
                         </div>
                     </div>
@@ -167,10 +165,13 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="left-text-content">
                         <div class="section-heading">
-                            <h6>About Us</h6>
-                            <h2>We Leave A Delicious Memory For You</h2>
+                            <h6>About FYP</h6>
+                            <h2>Final Year Project</h2>
                         </div>
-                        <p>Klassy Cafe is one of the best <a href="https://templatemo.com/tag/restaurant" target="_blank" rel="sponsored">restaurant HTML templates</a> with Bootstrap v4.5.2 CSS framework. You can download and feel free to use this website template layout for your restaurant business. You are allowed to use this template for commercial purposes. <br><br>You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please contact us for more information.</p>
+                        <p>Final Year Project (FYP) is a compulsory course for all CCI diploma and degree programs. To graduate,
+students need to at least pass FYP course. In CCI, FYP coordinator is responsible in managing FYP
+matters. <br><br>To improve efficiency and productivity in managing and coordinating FYP, a web-based
+system has been proposed.</p>
                         <div class="row">
                             <div class="col-4">
                                 <img src="assets/images/about-thumb-01.jpg" alt="">
@@ -291,7 +292,7 @@ https://templatemo.com/tm-558-klassy-cafe
     <!-- ***** Menu Area Ends ***** -->
 
     <!-- ***** Chefs Area Starts ***** -->
-    <section class="section" id="chefs">
+    <!-- <section class="section" id="chefs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 offset-lg-4 text-center">
@@ -355,7 +356,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Chefs Area Ends ***** -->
 
     <!-- ***** Reservation Us Area Starts ***** -->
@@ -366,9 +367,9 @@ https://templatemo.com/tm-558-klassy-cafe
                     <div class="left-text-content">
                         <div class="section-heading">
                             <h6>Contact Us</h6>
-                            <h2>Here You Can Make A Reservation Or Just walkin to our cafe</h2>
+                            <h2>If U Encounter Any Problem, Feel Free To Contact These Numbers</h2>
                         </div>
-                        <p>Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend riqsie, namei sollicitudin urna diam, sed commodo purus porta ut.</p>
+                        <p>Any inquiries or questions can be channeled through these numbers and emails.</p>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="phone">
@@ -387,7 +388,10 @@ https://templatemo.com/tm-558-klassy-cafe
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+
+                <!--TABLE RESERVATION /////////////////////////////////////////////////////////////////////-->
+
+                <!-- <div class="col-lg-6">
                     <div class="contact-form">
                         <form id="contact" action="" method="post">
                           <div class="row">
@@ -462,13 +466,13 @@ https://templatemo.com/tm-558-klassy-cafe
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- ***** Reservation Area Ends ***** -->
 
     <!-- ***** Menu Area Starts ***** -->
-    <section class="section" id="offers">
+    <!-- <section class="section" id="offers">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 offset-lg-4 text-center">
@@ -730,7 +734,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Chefs Area Ends ***** --> 
     
     <!-- ***** Footer Start ***** -->
@@ -749,14 +753,14 @@ https://templatemo.com/tm-558-klassy-cafe
                 </div>
                 <div class="col-lg-4">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/images/white-logo.png" alt=""></a>
+                        <a href="/"><img src="assets/images/Universiti_Tenaga_Nasional_Logo.png" width="150" height="100" alt="Uniten"></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">
                     <div class="left-text-content">
-                        <p>© Copyright Klassy Cafe Co.
+                        <p>Azim Haikal Bin Ibrahim
                         
-                        <br>Design: TemplateMo</p>
+                        <br>SW0107276</p>
                     </div>
                 </div>
             </div>

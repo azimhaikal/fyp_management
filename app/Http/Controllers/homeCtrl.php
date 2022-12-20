@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-use App\Model\project;
-use App\Model\detail;
+use App\Models\project;
+use App\Models\detail;
 
 class homeCtrl extends Controller
 {
@@ -18,10 +18,12 @@ class homeCtrl extends Controller
         $typeuser=Auth::user()->usertype;
 
         if($typeuser=='1'){
-            return view('admin.adminpage');
+            $member = project::all();
+            return view('/viewproject',['www'=>$member]);
         }
         else{
-            return view('home');
+            $member = project::all();
+            return view('/viewprojectsv',['www'=>$member]);
         }
     }
 }
