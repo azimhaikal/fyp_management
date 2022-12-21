@@ -108,14 +108,24 @@ https://templatemo.com/tm-558-klassy-cafe
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                                <div>Project Name: </div>
-                                <input type="text" name="projectname" required>
+                                <div><label for="projectname">Project Name:</label></div>
+                                <input type="text" name="projectname" id="projectname" required>
                               </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                                <div>Student: </div>
-                                <input type="text" name="student" required>
+                                <div><label for="type">Project Type: </label></div>
+                                <select name="type" id="type" required>
+                                    <option value="" disabled selected hidden>Choose Project Type:</option>
+                                    <option value="Development">Development</option>
+                                    <option value="Research">Research</option>
+                                </select>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
+                                <div><label for="student">Student: </label></div>
+                                <input type="text" name="student" id="student" required>
                             </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">

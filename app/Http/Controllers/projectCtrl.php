@@ -19,8 +19,17 @@ class projectCtrl extends Controller
         $member = new project; #var to hold data & attribute of table
         $data = new detail;
 
+        $con = mysqli_connect("localhost","root","","finalproject");
+        $u = "SELECT projectname from projects where projectname='$req->projectname'";
+        $uu = mysqli_query($con,$u);
+
+        if(mysqli_num_rows($uu)>0){
+            echo "<script>alert('projectname already exists')</script>";
+            return view('/createproject');}
+        else{
         #attribute for member must be same as table | attribute for req same as name in form
         $member->projectname = $req->projectname;
+        $member->type = $req->type;
         $member->student = $req->student;
         $member->supervisor = $req->supervisor;
         $member->examiner1 = $req->examiner1;
@@ -36,6 +45,7 @@ class projectCtrl extends Controller
         $data->save();
 
         return redirect('/view'); #redirect to coordinatorhome
+        }
     }
 
     function updateproject($projectname){
@@ -49,7 +59,7 @@ class projectCtrl extends Controller
 
         $member->projectname = $req->projectname;
         $data->projectname = $req->projectname;
-
+        $member->type = $req->type;
         $member->student = $req->student;
         $member->supervisor = $req->supervisor;
         $member->examiner1 = $req->examiner1;
@@ -90,6 +100,7 @@ class projectCtrl extends Controller
         $member = detail::find($req->projectname);
 
         $member->projectname = $req->projectname;
+        $member->type = $req->type;
         $member->startdate = $req->startdate;
         $member->enddate = $req->enddate;
         $member->duration = $req->duration;

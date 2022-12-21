@@ -111,6 +111,15 @@ https://templatemo.com/tm-558-klassy-cafe
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
+                                <div><label for="type">Project Type: </label></div>
+                                <select name="type" id="type" required>
+                                    <option value="Development" @if($www['type'] == "Development") selected @endif>Development</option>
+                                    <option value="Research" @if($www['type'] == "Research") selected @endif>Research</option>
+                                </select>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
                                 <div><label for="student">Student:</label></div>
                                 <input type=text name="student" value="{{$www['student']}}" id="student">
                             </fieldset>
