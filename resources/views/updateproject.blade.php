@@ -1,6 +1,3 @@
-<x-app-layout>
-
-</x-app-layout>
 <html>
 <head>
     <title>Update Project</title>

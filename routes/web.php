@@ -33,6 +33,10 @@ Route::middleware([
     })->name('dashboard');
 });
 
+
+
+
+
 #//////////////   Coordinator
 
 #Route for button shortcut
@@ -54,6 +58,10 @@ Route::POST('/editproject',[projectCtrl::class,'editproject']);
 
 #Route for delete project
 Route::get('/deleteproject/{projectname}',[projectCtrl::class,'deleteproject']);
+
+
+
+
 
 #////////////   Lecturer
 
