@@ -38,6 +38,7 @@ Route::middleware([
 #Route for button shortcut
 Route::get('/view',[projectCtrl::class,'view']);
 
+#Route to view create form
 Route::get('/create',function(){
     return view('createproject');
 });
