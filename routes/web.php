@@ -75,4 +75,4 @@ Route::get('/details/{projectname}',[projectCtrl::class,'details']);
 Route::get('/update/{projectname}',[projectCtrl::class,'update']);
 
 #Route for editing project details
-Route::POST('edit',[projectCtrl::class,'edit']);
+Route::POST('/edit',[projectCtrl::class,'edit']);

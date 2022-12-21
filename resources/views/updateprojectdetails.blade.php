@@ -111,14 +111,14 @@ https://templatemo.com/tm-558-klassy-cafe
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
                                 <div>Start Date:</div>
-                                <input type=date name="startdate" value="{{$www['startdate']}}">
+                                <input type="date" name="startdate" value="{{$www['startdate']}}">
                               </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
                                 <div>End Date:</div>
-                                <input type=date name="enddate" value="{{$www['enddate']}}">
-                            </fieldset>
+                                <input type="date" name="enddate" value="{{$www['enddate']}}">
+                              </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>

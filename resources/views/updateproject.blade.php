@@ -100,7 +100,7 @@ https://templatemo.com/tm-558-klassy-cafe
 
                 <div class="col-lg-6">
                     <div class="contact-form">
-                    <form id="contact" action="/add" method="POST">
+                    <form id="contact" action="/editproject" method="POST">
                             @csrf
                           <div class="row">
                             <div class="col-lg-12">
@@ -197,7 +197,7 @@ https://templatemo.com/tm-558-klassy-cafe
                             </div>
                             <div class="col-lg-12">
                               <fieldset>
-                                <button type="submit" id="form-submit" class="main-button-icon">Create</button>
+                                <button type="submit" id="form-submit" class="main-button-icon">Update</button>
                               </fieldset>
                             </div>
                           </div>

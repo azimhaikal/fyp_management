@@ -100,7 +100,6 @@ class projectCtrl extends Controller
         $member = detail::find($req->projectname);
 
         $member->projectname = $req->projectname;
-        $member->type = $req->type;
         $member->startdate = $req->startdate;
         $member->enddate = $req->enddate;
         $member->duration = $req->duration;

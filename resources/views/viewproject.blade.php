@@ -125,7 +125,7 @@ https://templatemo.com/tm-558-klassy-cafe
                             @foreach($www as $data)
                                 <tr>
                                     <td>{{$data['projectname']}}</td>
-                                    <td>{{$data['projecttype']}}</td>
+                                    <td>{{$data['type']}}</td>
                                     <td>{{$data['student']}}</td>
                                     <td>{{$data['supervisor']}}</td>
                                     <td>{{$data['examiner1']}}</td>
