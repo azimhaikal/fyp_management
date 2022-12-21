@@ -100,57 +100,96 @@ https://templatemo.com/tm-558-klassy-cafe
 
                 <div class="col-lg-6">
                     <div class="contact-form">
-                        <form id="contact" action="/edit" method="POST">
+                        <form id="contact" action="/add" method="POST">
                             @csrf
                           <div class="row">
                             <div class="col-lg-12">
-                                <h4>Update Project Details</h4>
-                            </div>
-                            <div class="col-lg-12">
-                                <h4 align=center>{{$www['projectname']}}</h4>
+                                <h4>Create New Project</h4>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                                <div>Start Date:</div>
-                                <input type=date name="startdate" value="{{$www['startdate']}}">
+                                <div>Project Name: </div>
+                                <input type="text" name="projectname" required>
                               </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                                <div>End Date:</div>
-                                <input type=date name="enddate" value="{{$www['enddate']}}">
+                                <div>Student: </div>
+                                <input type="text" name="student" required>
                             </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                                <div><label for="progress">Progress:</label></div>
-                                <select name="progress" id="progress" required>
-                                    <option value="Milestone 1" @if($www['progress'] == "Milestone 1") selected @endif>Milestone 1</option>
-                                    <option value="Milestone 2" @if($www['progress'] == "Milestone 2") selected @endif>Milestone 2</option>
-                                    <option value="Final Report" @if($www['progress'] == "Final Report") selected @endif>Final Report</option>
+                                <div><label for="sv">Supervisor:</label></div>
+                                <select name="supervisor" id="sv" required>
+                                    <option value="" disabled selected hidden>Choose Supervisor:</option>
+                                    <option value="Azlan Yusof">Azlan Yusof</option>
+                                    <option value="Badariah Bte. Solemon, Assoc. Prof. Dr.">Badariah Bte. Solemon, Assoc. Prof. Dr.</option>
+                                    <option value="Faridah Hani Bte Mohamed Salleh, Ts. Dr.">Faridah Hani Bte Mohamed Salleh, Ts. Dr.</option>
+                                    <option value="Raja Feninferina Raja Azman">Raja Feninferina Raja Azman</option>
+                                    <option value="Hazleen Bte Aris, Assoc. Prof. Ts. Dr.">Hazleen Bte Aris, Assoc. Prof. Ts. Dr.</option>
+                                    <option value="Mohd Hazli Bin Mohamed Zabil, Ts. Dr.">Mohd Hazli Bin Mohamed Zabil, Ts. Dr.</option>
+                                    <option value="Lim Kok Cheng, Ts.">Lim Kok Cheng, Ts.</option>
+                                    <option value="Moamin A Mahmoud, Dr.">Moamin A Mahmoud, Dr.</option>
+                                    <option value="Naziffa Raha Binti Md Nasir">Naziffa Raha Binti Md Nasir</option>
+                                    <option value="Ramona Binti Ramli, Ts.">Ramona Binti Ramli, Ts.</option>
+                                    <option value="Muhammad Sufyian Bin Mohd Azmi, Ts.">Muhammad Sufyian Bin Mohd Azmi, Ts.</option>
+                                    <option value="Suhaimi Bin Ab. Rahman, Ts. Dr.">Suhaimi Bin Ab. Rahman, Ts. Dr.</option>
+                                    <option value="Yunus Bin Yusoff, Assoc. Prof. Ts. Dr.">Yunus Bin Yusoff, Assoc. Prof. Ts. Dr.</option>
+                                    <option value="Zailani Bte. Ibrahim, Ts.">Zailani Bte. Ibrahim, Ts.</option>
+                                    <option value="Azhana Ahmad, Ts. Dr.">Azhana Ahmad, Ts. Dr.</option>
                                 </select>
                               </fieldset>
                             </div>
                             <div class="col-md-6 col-sm-12">
                               <fieldset>
-                                <div><label for="status">Status:</label></div>
-                                <select name="status" id="status" required>
-                                    <option value="On Track" @if($www['status'] == "On Track") selected @endif>On Track</option>
-                                    <option value="Delayed" @if($www['status'] == "Delayed") selected @endif>Delayed</option>
-                                    <option value="Extended" @if($www['status'] == "Extended") selected @endif>Extended</option>
-                                    <option value="Completed" @if($www['status'] == "Completed") selected @endif>Completed</option>
+                                <div><label for="exam1">Examiner 1:</label></div>
+                                <select name="examiner1" id="exam1" required>
+                                    <option value="" disabled selected hidden>Choose Examiner 1: </option>
+                                    <option value="Azlan Yusof">Azlan Yusof</option>
+                                    <option value="Badariah Bte. Solemon, Assoc. Prof. Dr.">Badariah Bte. Solemon, Assoc. Prof. Dr.</option>
+                                    <option value="Faridah Hani Bte Mohamed Salleh, Ts. Dr.">Faridah Hani Bte Mohamed Salleh, Ts. Dr.</option>
+                                    <option value="Raja Feninferina Raja Azman">Raja Feninferina Raja Azman</option>
+                                    <option value="Hazleen Bte Aris, Assoc. Prof. Ts. Dr.">Hazleen Bte Aris, Assoc. Prof. Ts. Dr.</option>
+                                    <option value="Mohd Hazli Bin Mohamed Zabil, Ts. Dr.">Mohd Hazli Bin Mohamed Zabil, Ts. Dr.</option>
+                                    <option value="Lim Kok Cheng, Ts.">Lim Kok Cheng, Ts.</option>
+                                    <option value="Moamin A Mahmoud, Dr.">Moamin A Mahmoud, Dr.</option>
+                                    <option value="Naziffa Raha Binti Md Nasir">Naziffa Raha Binti Md Nasir</option>
+                                    <option value="Ramona Binti Ramli, Ts.">Ramona Binti Ramli, Ts.</option>
+                                    <option value="Muhammad Sufyian Bin Mohd Azmi, Ts.">Muhammad Sufyian Bin Mohd Azmi, Ts.</option>
+                                    <option value="Suhaimi Bin Ab. Rahman, Ts. Dr.">Suhaimi Bin Ab. Rahman, Ts. Dr.</option>
+                                    <option value="Yunus Bin Yusoff, Assoc. Prof. Ts. Dr.">Yunus Bin Yusoff, Assoc. Prof. Ts. Dr.</option>
+                                    <option value="Zailani Bte. Ibrahim, Ts.">Zailani Bte. Ibrahim, Ts.</option>
+                                    <option value="Azhana Ahmad, Ts. Dr.">Azhana Ahmad, Ts. Dr.</option>
                                 </select>
                               </fieldset>
                             </div>
                             <div class="col-md-6 col-sm-12">
                               <fieldset>
-                                <input type=hidden name="duration" value="{{$www['duration']}}">
-                                <input type=hidden name="projectname" value="{{$www['projectname']}}">  
+                                <div><label for="exam2">Examiner 2:</label></div>
+                                <select name="examiner2" id="exam1" required>
+                                    <option value="" disabled selected hidden>Choose Examiner 2: </option>
+                                    <option value="Azlan Yusof">Azlan Yusof</option>
+                                    <option value="Badariah Bte. Solemon, Assoc. Prof. Dr.">Badariah Bte. Solemon, Assoc. Prof. Dr.</option>
+                                    <option value="Faridah Hani Bte Mohamed Salleh, Ts. Dr.">Faridah Hani Bte Mohamed Salleh, Ts. Dr.</option>
+                                    <option value="Raja Feninferina Raja Azman">Raja Feninferina Raja Azman</option>
+                                    <option value="Hazleen Bte Aris, Assoc. Prof. Ts. Dr.">Hazleen Bte Aris, Assoc. Prof. Ts. Dr.</option>
+                                    <option value="Mohd Hazli Bin Mohamed Zabil, Ts. Dr.">Mohd Hazli Bin Mohamed Zabil, Ts. Dr.</option>
+                                    <option value="Lim Kok Cheng, Ts.">Lim Kok Cheng, Ts.</option>
+                                    <option value="Moamin A Mahmoud, Dr.">Moamin A Mahmoud, Dr.</option>
+                                    <option value="Naziffa Raha Binti Md Nasir">Naziffa Raha Binti Md Nasir</option>
+                                    <option value="Ramona Binti Ramli, Ts.">Ramona Binti Ramli, Ts.</option>
+                                    <option value="Muhammad Sufyian Bin Mohd Azmi, Ts.">Muhammad Sufyian Bin Mohd Azmi, Ts.</option>
+                                    <option value="Suhaimi Bin Ab. Rahman, Ts. Dr.">Suhaimi Bin Ab. Rahman, Ts. Dr.</option>
+                                    <option value="Yunus Bin Yusoff, Assoc. Prof. Ts. Dr.">Yunus Bin Yusoff, Assoc. Prof. Ts. Dr.</option>
+                                    <option value="Zailani Bte. Ibrahim, Ts.">Zailani Bte. Ibrahim, Ts.</option>
+                                    <option value="Azhana Ahmad, Ts. Dr.">Azhana Ahmad, Ts. Dr.</option>
+                                </select>
                               </fieldset>
                             </div>
                             <div class="col-lg-12">
                               <fieldset>
-                                <button type="submit" id="form-submit" class="main-button-icon">Update</button>
+                                <button type="submit" id="form-submit" class="main-button-icon">Create</button>
                               </fieldset>
                             </div>
                           </div>
